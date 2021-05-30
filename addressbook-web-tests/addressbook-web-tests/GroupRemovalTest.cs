@@ -12,12 +12,12 @@ namespace WebAddressbookTests
         [Test]
         public void TheBookManyHealthcareAppointmentsTest()
         {
-            GoToHomePage();
-            loginHelper.Login(new AccountData("admin", "secret"));
-            GoToGroupPage();
-            SelectGroup(1);
-            RemoveGroup();
-            ReturnToGroupPage();
+            app.Navigator.GoToHomePage();
+            app.Auth.Login(new AccountData("admin", "secret"));
+            app.Navigator.GoToGroupPage();
+            app.Groups.SelectGroup(1);
+            app.Groups.RemoveGroup();
+            app.Groups.ReturnToGroupPage();
         }
     }
 }
