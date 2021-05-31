@@ -59,27 +59,26 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AccountData.cs" />
-    <Compile Include="ApplicationManager.cs" />
-    <Compile Include="ContactData.cs" />
-    <Compile Include="ContactHelper.cs" />
-    <Compile Include="GroupData.cs" />
-    <Compile Include="GroupHelper.cs" />
-    <Compile Include="HelperBase.cs" />
-    <Compile Include="LoginHelper.cs" />
-    <Compile Include="NavigationHelper.cs" />
-    <Compile Include="TestBase.cs" />
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="model\AccountData.cs" />
+    <Compile Include="app\ApplicationManager.cs" />
+    <Compile Include="model\ContactData.cs" />
+    <Compile Include="app\ContactHelper.cs" />
+    <Compile Include="model\GroupData.cs" />
+    <Compile Include="app\GroupHelper.cs" />
+    <Compile Include="app\HelperBase.cs" />
+    <Compile Include="app\LoginHelper.cs" />
+    <Compile Include="app\NavigationHelper.cs" />
+    <Compile Include="tests\TestBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="GroupCreationTests.cs" />
-    <Compile Include="ContactCreationTest.cs" />
-    <Compile Include="GroupRemovalTest.cs" />
+    <Compile Include="tests\GroupCreationTests.cs" />
+    <Compile Include="tests\ContactCreationTest.cs" />
+    <Compile Include="tests\GroupRemovalTest.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="ClassDiagram1.cd" />
     <None Include="ClassDiagram2.cd" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
